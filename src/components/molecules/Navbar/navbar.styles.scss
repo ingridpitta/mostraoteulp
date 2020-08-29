@@ -11,3 +11,55 @@ nav{
         margin-left: 50px;
     }
 }
+
+@media(min-width: $mobile-small){
+    nav{
+        
+        button{
+            margin-right: 20px;
+        }
+    
+        svg{
+            margin-left: 20px;
+        }
+    }
+}
+
+@media(min-width: $mobile){
+    nav{
+        
+        button{
+            margin-right: 20px;
+        }
+    
+        svg{
+            margin-left: 20px;
+        }
+    }
+}
+
+@media(min-width: $tablet-ver){
+    nav{
+        
+        button{
+            margin-right: 20px;
+        }
+    
+        svg{
+            margin-left: 20px;
+        }
+    }
+}
+
+@media(min-width: $tablet-hor){
+    nav{
+        
+        button{
+            margin-right: 20px;
+        }
+    
+        svg{
+            margin-left: 20px;
+        }
+    }
+}
