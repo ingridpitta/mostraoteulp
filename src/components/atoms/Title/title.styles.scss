@@ -1,0 +1,24 @@
+@import "../../../styles/_index";
+
+.title--container{
+    width: 100%;
+    text-align: left;
+
+    .title--default{
+        margin: 0;
+        color: $color-gray;
+        font-size: $font-size--title--emphasys--big;
+        font-weight: normal;
+    }
+
+    .title--support{
+        margin: 75px auto;
+        width: fit-content;
+        padding: 0 30px 5px 30px;
+        border-bottom: 4px solid $color-purple;
+        color: $color-gray;
+        font-size: $font-size--title--emphasys;
+        font-weight: normal;
+        text-align: center;
+    }
+}

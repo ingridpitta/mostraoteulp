@@ -1,0 +1,75 @@
+//Colors
+$color-purple: #5e17eb;
+$color-pink: #fa1452;
+$color-orange: #f85f00;
+$color-yellow: #ffe57b;
+$color-gray: #727375;
+
+// Opacity Colors
+$color-yellow--lighter: rgba(251, 235, 182, 0.3);
+$color-gray--lighter: rgba(196, 196, 196, 0.3);
+
+//Primary Colors
+$white: #fff;
+$black: #000;
+
+//Secondary Colors
+$blue: #337ab7;
+$pink: #ff1e6d;
+$green: #0fe3d6;
+$purple: #55005e;
+$light-gray: #d1d4d4;
+$orange: #f55003;
+
+//Navbar Background
+$nav-bkg--default: $white; //Navbar
+
+//Texts
+$text-title--default: $color-gray;
+$text-subtitle--default: $color-gray;
+$text-btn--cta--full: $white;
+$text-btn--cta--empty: $color-gray;
+$text--emphasys: $color-orange;
+$text--default: $white;
+
+//Button Background
+$btn-bkg--cta--full: $color-purple;
+$btn-bkg--cta--empty: transparent;
+
+//FONTS
+$font-family--default: "Chivo", sans-serif;
+$font-family--emphasys: "Roboto", sans-serif;
+
+//FONT-SIZES
+$font-size--default: 16px;
+
+$font-size--secondary: 1.5rem;
+$font-size--tertiary: 0.75rem;
+
+$font-size--title--big: 2rem;
+$font-size--title--emphasys: 3rem;
+$font-size--title--emphasys--big: 4rem;
+$font-size--title: 1.625rem;
+$font-size--subtitle: 1.125rem;
+$font-size--text: 1rem;
+
+$font-size--big: 2rem;
+$font-size--medium: 0.885rem;
+$font-size--medium--secondary: 1.25rem;
+$font-size--small: 0.5rem;
+
+$font-size--footer: 1.125rem;
+
+//Grid
+$grid-gutter: 4px;
+$grid-columns: 6;
+$grid-max: 500px;
+
+//BREAKPOINTS
+$mobile-small: 320px;
+$mobile: 420px;
+$tablet-ver: 768px;
+$tablet-hor: 1024px;
+$desktop-small: 1280px;
+$desktop: 1440px;
+$desktop-large: 2560px;

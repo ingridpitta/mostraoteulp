@@ -1,0 +1,14 @@
+@import "../../../styles/_index";
+
+.text--container{
+    width: 100%;
+    text-align: left;
+
+    h2{
+        margin: 32px 0;
+        font-family: $font-family--default;
+        color: $color-orange;
+        font-size: $font-size--subtitle;
+        font-weight: bold;
+    }
+}

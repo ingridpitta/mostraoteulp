@@ -1,0 +1,161 @@
+@import "../../../styles/_index";
+
+.form--container{
+    font-family: $font-family--default;
+    background-color: $white;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    position: fixed;
+    top: 0.5%;
+    left: 35%;
+    z-index: 10;
+    height: fit-content;
+
+    .btn--modal{
+        text-align: right;
+        button{
+            @extend %btn--close--modal;
+        }
+    }
+
+    .formTitle--container{
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        div{
+            text-align: left;
+            h1{
+                font-size: $font-size--title;
+                color: $color-purple;
+            }
+        }
+    }
+
+    .form{
+        width: 100%;
+
+        .input--container{
+            width: 100%;
+            label{
+                color: $color-gray;
+            }
+
+            .ant-row, .ant-form-item, .ant-form-item-with-help, .ant-form-item-has-error{
+                margin-bottom: 20px;
+
+                .ant-col, .ant-form-item-control{
+                    .ant-form-item-control-input{
+                        .ant-form-item-control-input-content{
+                            .ant-input, .modal--input{
+                                width: 100%;
+                                border: none;
+                                border-bottom: 0.5px solid $color-gray;
+                                color: $color-gray;
+                                padding: 10px 0 5px 0;
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .ant-form-item-explain{
+                        div{
+                            margin-top: 5px;
+                            font-size: $font-size--tertiary;
+                            color: $color-purple;
+                        }
+                    }
+                }
+            }
+
+            .ant-row, .ant-form-item, .ant-form-item-with-help{
+                .ant-col, .ant-form-item-control{
+                    .ant-form-item-control-input{
+                        .ant-form-item-control-input-content{
+                            .ant-input, .modal--input{
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .ant-form-item-explain{
+                        div{
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkbox--container{
+            margin-bottom: 50px;
+
+            .ant-checkbox-wrapper{
+                .ant-checkbox{
+                     
+                    .ant-checkbox-input{
+                       outline-offset: none;
+                       outline: none;
+                    }
+
+                    
+
+                    .ant-checkbox-inner{
+
+                    }
+                }
+
+                .ant-checkbox-checked{
+                    .ant-checkbox-input{
+                        outline-offset: none;
+                        outline: none;
+                    }
+
+                    .ant-checkbox-inner{
+                    }
+                }
+
+                span:last-child{
+                    color: $color-gray;
+                    padding-left: 2px;
+                }
+            }
+        }
+
+        .btn--modal--cta--full{
+            text-align: center;
+
+            button{
+                @extend %btn--modal--full;
+            }
+        }
+    }
+}
+
+
+@media(min-width: $desktop){
+    .form--container{
+        left: 35%;
+    }
+}
+
+@media(min-width: 1680px){
+    .form--container{
+        left: 37%;
+    }
+}
+
+@media(min-width: 1920px){
+    .form--container{
+        left: 39%;
+    }
+}
+
+@media(min-width: $desktop-large){
+    .form--container{
+        left: 41.5%;
+    }
+}

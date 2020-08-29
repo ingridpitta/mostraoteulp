@@ -1,0 +1,71 @@
+@import "../../../styles/_index";
+
+.finalMessage--container{
+    font-family: $font-family--default;
+    background-color: $white;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 5px;
+    border: none;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    z-index: 10;
+    height: fit-content;
+
+    .title--container{
+        text-align: center;
+
+        h1{
+            font-size: $font-size--title;
+            color: $color-purple;
+            font-weight: bold;
+        }
+    }
+
+    .text--container{
+        text-align: center;
+        margin: 50px auto;
+
+        h2{
+            font-size: $font-size--medium--secondary;
+            color: $color-gray;
+        }
+    }
+    
+    .btn--modal--cta--full{
+        text-align: center;
+
+        button{
+            @extend %btn--modal--full;
+        }
+    }
+}
+
+
+
+@media(min-width: $desktop){
+    .finalMessage--container{
+        left: 33%;
+    }
+}
+
+@media(min-width: 1680px){
+    .finalMessage--container{
+        left: 35%;
+    }
+}
+
+@media(min-width: 1920px){
+    .finalMessage--container{
+        left: 37.8%;
+    }
+}
+
+@media(min-width: $desktop-large){
+    .finalMessage--container{
+        left: 40.5%;
+    }
+}
