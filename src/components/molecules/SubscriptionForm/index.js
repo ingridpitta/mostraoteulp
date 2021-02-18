@@ -1,6 +1,5 @@
 import React from "react";
 import { Formik } from "formik";
-import { Checkbox } from "antd";
 import { Input, Title } from "../../atoms";
 import SubscriptionFormSchema from "./SubscriptionForm.schema";
 import "./subscriptionForm.styles.scss";
@@ -9,14 +8,12 @@ const SubscriptionForm = ({ closeModal, confirmSubscribe }) => {
   const initialState = {
     name: "",
     email: "",
-    city: "",
-    state: "",
     organization: "",
-    phone: "",
-    race: "",
+    works: "",
+    social: "",
     gender: "",
-    orientation: "",
-    auth: false,
+    race: "",
+    comments: ""
   };
 
   const onSubmitMethod = async (values, actions) => {
@@ -80,37 +77,9 @@ const SubscriptionForm = ({ closeModal, confirmSubscribe }) => {
               />
             </div>
             <div className="input--container">
-              <label htmlFor="city">Cidade</label>
+              <label htmlFor="organization">Coletivo</label>
               <Input
-                placeholder="Insira sua cidade"
-                handleChange={handleChange}
-                {...props}
-                name="city"
-                value={values.city}
-                handleBlur={handleBlur}
-                isLoading={isSubmitting}
-                error={errors.city}
-                touched={touched.city}
-              />
-            </div>
-            <div className="input--container">
-              <label htmlFor="state">Estado</label>
-              <Input
-                placeholder="Insira seu estado"
-                handleChange={handleChange}
-                {...props}
-                name="state"
-                value={values.state}
-                handleBlur={handleBlur}
-                isLoading={isSubmitting}
-                error={errors.state}
-                touched={touched.state}
-              />
-            </div>
-            <div className="input--container">
-              <label htmlFor="organization">Coletivo / Organização</label>
-              <Input
-                placeholder="Insira seu coletivo ou organização"
+                placeholder="Insira seu coletivo"
                 handleChange={handleChange}
                 {...props}
                 name="organization"
@@ -122,31 +91,31 @@ const SubscriptionForm = ({ closeModal, confirmSubscribe }) => {
               />
             </div>
             <div className="input--container">
-              <label htmlFor="phone">Celular</label>
+              <label htmlFor="works">Trabalhos</label>
               <Input
-                placeholder="Insira seu celular"
+                placeholder="Insira seus trabalhos"
                 handleChange={handleChange}
                 {...props}
-                name="phone"
-                value={values.phone}
+                name="works"
+                value={values.works}
                 handleBlur={handleBlur}
                 isLoading={isSubmitting}
-                error={errors.phone}
-                touched={touched.phone}
+                error={errors.works}
+                touched={touched.works}
               />
             </div>
             <div className="input--container">
-              <label htmlFor="race">Raça</label>
+              <label htmlFor="social">Redes Sociais</label>
               <Input
-                placeholder="Insira sua raça"
+                placeholder="Insira sua rede social"
                 handleChange={handleChange}
                 {...props}
-                name="race"
-                value={values.race}
+                name="social"
+                value={values.social}
                 handleBlur={handleBlur}
                 isLoading={isSubmitting}
-                error={errors.race}
-                touched={touched.race}
+                error={errors.social}
+                touched={touched.social}
               />
             </div>
             <div className="input--container">
@@ -164,31 +133,32 @@ const SubscriptionForm = ({ closeModal, confirmSubscribe }) => {
               />
             </div>
             <div className="input--container">
-              <label htmlFor="orientation">Orientação</label>
+              <label htmlFor="race">Raça</label>
               <Input
-                placeholder="Insira sua orientação"
+                placeholder="Insira sua raça"
                 handleChange={handleChange}
                 {...props}
-                name="orientation"
-                value={values.orientation}
+                name="race"
+                value={values.race}
                 handleBlur={handleBlur}
                 isLoading={isSubmitting}
-                error={errors.orientation}
-                touched={touched.orientation}
+                error={errors.race}
+                touched={touched.race}
               />
             </div>
-            <div className="checkbox--container">
-              <Checkbox
-                onChange={handleChange}
+            <div className="input--container">
+              <label htmlFor="comments">Comentário</label>
+              <Input
+                placeholder="Insira um comentário"
+                handleChange={handleChange}
                 {...props}
-                name="auth"
+                name="comments"
+                value={values.comments}
                 handleBlur={handleBlur}
                 isLoading={isSubmitting}
-                error={errors.auth}
-                touched={touched.auth}
-              >
-                Aceito receber notícias e atualizações
-              </Checkbox>
+                error={errors.comments}
+                touched={touched.comments}
+              />
             </div>
             <div className="btn--modal--cta--full">
                 <button type="submit" isLoading={isSubmitting}>

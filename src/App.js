@@ -1,12 +1,16 @@
 import React from "react";
-import { Home } from "./pages";
+import { Home, RegisterForm } from "./pages";
+import Template from "./components/template";
 import { Switch, Route } from "react-router-dom";
 import "./app.styles.scss";
 
 function App() {
   return (
     <Switch>
-      <Route exact path="/" render={props => <Home />} />
+      <Template>
+        <Route exact path="/" render={(props) => <Home />} />
+        <Route exact path="/register" render={(props) => <RegisterForm />} />
+      </Template>
     </Switch>
   );
 }

@@ -1,0 +1,9 @@
+@import "../../styles/_index";
+
+.registerForm--container {
+  height: auto;
+  .modal--background {
+    @extend %background;
+    height: 104vh;
+  }
+}

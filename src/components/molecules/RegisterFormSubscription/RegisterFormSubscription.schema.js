@@ -1,6 +1,6 @@
 import * as yup from "yup";
 
-const SubscriptionFormSchema = yup.object().shape({
+const RegisterFormSubscriptionSchema = yup.object().shape({
   name: yup
     .string()
     .required("Campo obrigatório")
@@ -39,4 +39,4 @@ const SubscriptionFormSchema = yup.object().shape({
     .max(300, "Máximo de 300 caracteres"),
 });
 
-export default SubscriptionFormSchema;
+export default RegisterFormSubscriptionSchema;

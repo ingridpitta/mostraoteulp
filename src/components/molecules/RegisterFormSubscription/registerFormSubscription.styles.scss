@@ -1,0 +1,234 @@
+@import "../../../styles/_index";
+
+.form--container{
+    font-family: $font-family--default;
+    background-color: $white;
+    max-width: 380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    position: fixed;
+    top: 0.5%;
+    left: 35%;
+    z-index: 0;
+    height: fit-content;
+
+    .btn--modal{
+        text-align: right;
+        button{
+            @extend %btn--close--modal;
+        }
+    }
+
+    .formTitle--container{
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        div{
+            text-align: left;
+            h1{
+                font-size: $font-size--title;
+                color: $color-purple;
+            }
+        }
+    }
+
+    .form{
+        width: 100%;
+
+        .input--container{
+            width: 100%;
+            label{
+                color: $color-gray;
+            }
+
+            .ant-row, .ant-form-item, .ant-form-item-with-help, .ant-form-item-has-error{
+                margin-bottom: 20px;
+
+                .ant-col, .ant-form-item-control{
+                    .ant-form-item-control-input{
+                        .ant-form-item-control-input-content{
+                            .ant-input, .modal--input{
+                                width: 100%;
+                                border: none;
+                                border-bottom: 0.5px solid $color-gray;
+                                color: $color-gray;
+                                padding: 10px 0 5px 0;
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .ant-form-item-explain{
+                        div{
+                            margin-top: 5px;
+                            font-size: $font-size--tertiary;
+                            color: $color-purple;
+                        }
+                    }
+                }
+            }
+
+            .ant-row, .ant-form-item, .ant-form-item-with-help{
+                .ant-col, .ant-form-item-control{
+                    .ant-form-item-control-input{
+                        .ant-form-item-control-input-content{
+                            .ant-input, .modal--input{
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .ant-form-item-explain{
+                        div{
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .checkbox--container{
+            margin-bottom: 50px;
+
+            .ant-checkbox-wrapper{
+                .ant-checkbox{
+                     
+                    .ant-checkbox-input{
+                       outline-offset: none;
+                       outline: none;
+                    }
+
+                    
+
+                    .ant-checkbox-inner{
+
+                    }
+                }
+
+                .ant-checkbox-checked{
+                    .ant-checkbox-input{
+                        outline-offset: none;
+                        outline: none;
+                    }
+
+                    .ant-checkbox-inner{
+                    }
+                }
+
+                span:last-child{
+                    color: $color-gray;
+                    padding-left: 2px;
+                }
+            }
+        }
+
+        .btn--modal--cta--full{
+            text-align: center;
+
+            button{
+                @extend %btn--modal--full;
+            }
+        }
+    }
+}
+
+@media(min-width: $mobile-small){
+    .form--container{
+        max-width: 320px;
+        width: 82%;
+        left: 0;
+        height: 600px;
+        overflow: scroll;
+    }
+}
+
+@media(min-width: 360px){
+    .form--container{
+        max-width: 320px;
+        width: 82%;
+        left: 0.5%;
+        height: 600px;
+        overflow: scroll;
+    }
+}
+
+@media(min-width: 375px){
+    .form--container{
+        max-width: 320px;
+        width: 82%;
+        left: 1%;
+        height: 600px;
+        overflow: scroll;
+    }
+}
+
+@media(min-width: 411px){
+    .form--container{
+        max-width: 320px;
+        width: 82%;
+        left: 4%;
+        height: 600px;
+        overflow: scroll;
+    }
+}
+
+@media(min-width: $mobile){
+    .form--container{
+        max-width: 420px;
+        width: 82%;
+        left: 2%;
+        height: 700px;
+        overflow: scroll;
+    }
+}
+
+@media(min-width: $tablet-ver){
+    .form--container{
+        max-width: 380px;
+        width: 100%;
+        left: 21%;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media(min-width: $tablet-hor){
+    .form--container{
+        max-width: 380px;
+        width: 100%;
+        left: 30%;
+    }
+}
+
+@media(min-width: $desktop-small){
+    .form--container{
+        left: 35%;
+    }
+}
+
+@media(min-width: $desktop){
+    .form--container{
+        left: 35%;
+    }
+}
+
+@media(min-width: 1680px){
+    .form--container{
+        left: 37%;
+    }
+}
+
+@media(min-width: 1920px){
+    .form--container{
+        left: 39%;
+    }
+}
+
+@media(min-width: $desktop-large){
+    .form--container{
+        left: 41.5%;
+    }
+}

@@ -1,27 +1,17 @@
 import React, { Component } from "react";
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { HomeContent } from "../../components/organisms";
-import { SubscriptionForm, FinalMessage } from "../../components/molecules";
-import "./home.styles.scss";
+import { RegisterFormContent } from "../../components/organisms";
+import { FinalMessage } from "../../components/molecules";
+import "./registerForm.styles.scss";
 
-//OLD
 class Home extends Component {
   constructor() {
     super();
 
     this.state = {
-      showModal: false,
       showMessage: false,
     };
   }
-
-  showModal = () => {
-    this.setState({ showModal: true });
-  };
-
-  closeModal = () => {
-    this.setState({ showModal: false });
-  };
 
   showMessage = () => {
     this.setState({ showMessage: true });
@@ -42,27 +32,23 @@ class Home extends Component {
     const {
       name,
       email,
-      city,
-      state,
       organization,
-      phone,
-      race,
+      works,
+      social,
       gender,
-      orientation,
-      auth,
+      race,
+      comments,
     } = data;
 
     const formatedData = {
       Nome: name,
       Email: email,
-      Cidade: city,
-      Estado: state,
-      Organização: organization,
-      Celular: phone,
-      Raça: race,
+      Coletivo: organization,
+      Trabalhos: works,
+      Rede_Social: social,
       Gênero: gender,
-      Orientação: orientation,
-      Autorização: auth ? "Sim" : "Não",
+      Raça: race,
+      Comentário: comments,
     };
 
     try {
@@ -82,23 +68,15 @@ class Home extends Component {
   };
 
   render() {
-    const { showModal, showMessage } = this.state;
+    const { showMessage } = this.state;
     return (
-      <main className="home--container">
-        {showModal && (
-          <div className="modal--background">
-            <SubscriptionForm
-              closeModal={this.closeModal}
-              confirmSubscribe={this.saveData}
-            />
-          </div>
-        )}
+      <main className="registerForm--container">
         {showMessage && (
           <div className="modal--background">
             <FinalMessage closeMessage={this.closeMessage} />
           </div>
         )}
-        <HomeContent subscribe={this.showModal} />
+        <RegisterFormContent subscribe={this.saveData} />
       </main>
     );
   }
