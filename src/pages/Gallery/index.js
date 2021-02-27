@@ -11,7 +11,7 @@ const Gallery = ({ artists }) => {
         const { id, bio, ed_mostra, name, photo, projects } = artist;
 
         return (
-          <Link to={`/artist/portfolio/${id}`}>
+          <Link to={`/portfolio/${id}`}>
             <div key={index} className="gallery--artist">
               {/* <img src={photo} alt={`${name} foto`} /> */}
               <div></div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { Home, RegisterForm, Gallery, Portfolio } from "./pages";
+import { Home, RegisterForm, Gallery, Portfolio, Project } from "./pages";
 import Template from "./components/template";
 import { Switch, Route } from "react-router-dom";
 import "./app.styles.scss";
@@ -149,8 +149,12 @@ class App extends Component {
             render={(props) => <Gallery artists={artists} {...props} />}
           />
           <Route
-            path="/artist/portfolio"
+            path="/portfolio"
             render={(props) => <Portfolio artists={artists} {...props} />}
+          />
+          <Route
+            path="/project"
+            render={(props) => <Project artists={artists} {...props} />}
           />
         </Template>
       </Switch>
