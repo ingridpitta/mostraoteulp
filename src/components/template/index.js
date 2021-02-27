@@ -4,10 +4,10 @@ import "./template.styles.scss";
 
 const Template = ({ children }) => {
   return (
-    <>
-      <Navbar style={{zIndex: "100"}}/>
-      {/* {children} */}
-    </>
+    <main className="template--container">
+      <Navbar/>
+      {children}
+    </main>
   );
 };
 

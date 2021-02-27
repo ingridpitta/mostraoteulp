@@ -1,0 +1,42 @@
+@import "../../styles/_index";
+
+.portfolio--container {
+  max-width: 100vw;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 25px;
+
+  svg {
+      width: 100%;
+      height: 70px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+
+    .portfolio--artist {
+      img {
+        width: 60%;
+        height: 200px;
+      }
+
+      div {
+        background-color: black;
+        width: 60%;
+        height: 160px;
+        margin: 0 auto;
+      }
+
+      h4 {
+        width: 60%;
+        margin: 10px auto;
+        font-size: $font-size--medium;
+        color: $black;
+      }
+    }
+  }
+}
