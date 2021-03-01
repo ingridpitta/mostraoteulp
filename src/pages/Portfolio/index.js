@@ -19,12 +19,9 @@ const Portfolio = ({ artists, ...props }) => {
       {currentArtist.map((artist) => {
         const { bio, ed_mostra, id, name, photo, projects } = artist;
         return (
-          <div key={id}>
-            <div>
-              <div
-                className="backBtn"
-                onClick={() => history.push("/gallery")}
-              >
+          <div className="portfolio--content" key={id}>
+            <div className="portfolio--nav">
+              <div className="backBtn" onClick={() => history.push("/gallery")}>
                 <Back />
                 Voltar
               </div>
@@ -33,30 +30,43 @@ const Portfolio = ({ artists, ...props }) => {
             </div>
             <div className="about">
               <h1>{name}</h1>
-              <img src={photo} alt={`${name} foto`} />
-              <p>{bio}</p>
+              <div>
+                <img src={photo} alt={`${name} foto`} />
+              </div>
+
+              <p>
+                <span>{name}, </span>
+                {bio}
+              </p>
             </div>
-            {projects.map((project) => {
-              return (
-                <div key={project.index} className="projects">
-                  {project.title && (
-                    <Link to={{
-                      pathname: `/project/${project.index}`,
-                      state: currentArtist
-                    }}>
-                      <img
-                        src={project.links[0] !== "-" && project.links[0]}
-                        alt={`${project.title} capa`}
-                      />
-                      <div>
-                        <h3>{project.title}</h3>
-                        <h4>{project.year}</h4>
-                      </div>
-                    </Link>
-                  )}
-                </div>
-              );
-            })}
+            <div className="projects">
+              {projects.map((project) => {
+                return (
+                  <>
+                    {project.title && (
+                      <Link
+                        key={project.index}
+                        to={{
+                          pathname: `/project/${project.index}`,
+                          state: currentArtist,
+                        }}
+                      >
+                        <div className="project--image">
+                          <img
+                            src={project.links[0] !== "-" && project.links[0]}
+                            alt={`${project.title} capa`}
+                          />
+                        </div>
+                        <div>
+                          <h3>{project.title}</h3>
+                          <h4>{project.year}</h4>
+                        </div>
+                      </Link>
+                    )}
+                  </>
+                );
+              })}
+            </div>
           </div>
         );
       })}
