@@ -31,8 +31,8 @@ const Project = ({ ...props }) => {
           year,
         } = project;
         return (
-          <div key={index}>
-            <div>
+          <div className="project--content" key={index}>
+            <div className="project--nav">
               <div className="backBtn" onClick={() => history.push(`/portfolio/${currentArtistId}`)}>
                 <Back />
                 Voltar
@@ -43,7 +43,7 @@ const Project = ({ ...props }) => {
 
             <h1>{title}</h1>
 
-            <div>
+            <div className="project--images">
               {links.map((link, pos) => {
                 return (
                   <div key={`${index}_${pos}`}>
@@ -52,13 +52,13 @@ const Project = ({ ...props }) => {
                 );
               })}
             </div>
-            <div>
+            <div className="project--description">
               <h2>Descrição</h2>
               {description}
             </div>
-            <div>
+            <div className="project--datasheet">
               <h2>Ficha Técnica</h2>
-              {datasheet}
+              <div dangerouslySetInnerHTML={{ __html:datasheet}}/>
             </div>
           </div>
         );
