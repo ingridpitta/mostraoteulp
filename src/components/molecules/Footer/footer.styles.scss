@@ -1,0 +1,41 @@
+@import "../../../styles/_index";
+
+footer {
+  background-color: $orange;
+  text-align: center;
+  margin-top: 30px;
+
+  div {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a {
+      .instagram {
+      }
+    }
+
+    a {
+      .fb {
+      }
+    }
+
+    a {
+      .twitter {
+      }
+    }
+
+    a {
+      .email {
+      }
+    }
+  }
+}

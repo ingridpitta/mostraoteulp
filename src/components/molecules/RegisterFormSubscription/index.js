@@ -4,18 +4,7 @@ import { Input, Title } from "../../atoms";
 import RegisterFormSubscriptionSchema from "./RegisterFormSubscription.schema";
 import "./registerFormSubscription.styles.scss";
 
-const RegisterFormSubscription = ({ confirmSubscribe }) => {
-  const initialState = {
-    name: "",
-    email: "",
-    organization: "",
-    works: "",
-    social: "",
-    gender: "",
-    race: "",
-    comments: "",
-  };
-
+const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
   const onSubmitMethod = async (values, actions) => {
     console.log({ values });
 
@@ -26,7 +15,7 @@ const RegisterFormSubscription = ({ confirmSubscribe }) => {
     <div className="form--container">
       <div className="formTitle--container">
         <Title title="Cadastro" />
-        <p>Quer participar da mostra? Pois se cadastra e mostra o teu!</p>
+        <p>Quer ser parte do ecossistema?  Pois cuida, se cadastra e Mostra o Teu!</p>
       </div>
       <Formik
         initialValues={initialState}
@@ -117,7 +106,7 @@ const RegisterFormSubscription = ({ confirmSubscribe }) => {
                 />
               </div>
             </div>
-            <div className="form-left">
+            <div className="form--left">
               <div className="input--container">
                 <label htmlFor="gender">Gênero</label>
                 <Input

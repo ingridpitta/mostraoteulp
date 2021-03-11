@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../molecules";
+import { Navbar, Footer } from "../molecules";
 import "./template.styles.scss";
 
 const Template = ({ children }) => {
@@ -7,6 +7,7 @@ const Template = ({ children }) => {
     <main className="template--container">
       <Navbar/>
       {children}
+      <Footer/>
     </main>
   );
 };

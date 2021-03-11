@@ -1,1 +1,287 @@
 @import "../../../styles/_index";
+
+nav {
+  max-width: 100vw;
+  width: 100%;
+  background-color: $orange;
+  margin-bottom: 30px;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .logo {
+      svg {
+        width: 90px;
+        height: 90px;
+        margin-left: 60px;
+      }
+    }
+
+    .menu--withButton {
+      margin: auto 0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      div {
+        margin-left: 0;
+        cursor: pointer;
+        outline: none;
+        padding-left: 40px;
+        svg {
+          outline: none;
+        }
+      }
+      ul {
+        position: absolute;
+        text-align: left;
+        list-style: none;
+        padding-left: 0;
+        background-color: $orange;
+        width: 100vw;
+        top: 30px;
+        padding-left: 40px;
+        padding-bottom: 20px;
+
+        a {
+          text-decoration: none;
+          li {
+            color: $white;
+            cursor: pointer;
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+
+    .menu {
+      display: none;
+      button {
+      }
+
+      ul {
+        a {
+          li {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    max-width: 100vw;
+    width: 100%;
+    background-color: $orange;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      .logo {
+        svg {
+          width: 90px;
+          height: 90px;
+          margin-left: 160px;
+        }
+      }
+
+      .menu--withButton {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        div {
+          margin-left: 0;
+          cursor: pointer;
+          outline: none;
+          padding-left: 100px;
+          svg {
+            outline: none;
+          }
+        }
+        ul {
+          position: absolute;
+          text-align: left;
+          list-style: none;
+          padding-left: 0;
+          background-color: $orange;
+          width: 100vw;
+          top: 30px;
+          padding-left: 100px;
+          padding-bottom: 20px;
+
+          a {
+            text-decoration: none;
+            li {
+              color: $white;
+              cursor: pointer;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+
+      .menu {
+        display: none;
+        button {
+        }
+
+        ul {
+          a {
+            li {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    max-width: 100vw;
+    width: 100%;
+    background-color: $orange;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      .logo {
+        svg {
+          width: 90px;
+          height: 90px;
+          margin-left: 340px;
+        }
+      }
+
+      .menu--withButton {
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        div {
+          margin-left: 0;
+          cursor: pointer;
+          outline: none;
+          padding-left: 100px;
+          svg {
+            outline: none;
+          }
+        }
+        ul {
+          position: absolute;
+          text-align: left;
+          list-style: none;
+          padding-left: 0;
+          background-color: $orange;
+          width: 100vw;
+          top: 30px;
+          padding-left: 100px;
+          padding-bottom: 20px;
+
+          a {
+            text-decoration: none;
+            li {
+              color: $white;
+              cursor: pointer;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+
+      .menu {
+        display: none;
+        button {
+        }
+
+        ul {
+          a {
+            li {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  nav {
+    max-width: 100vw;
+    width: 100%;
+    background-color: $white;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      .logo {
+        width: 30%;
+        svg {
+          width: 90px;
+          height: 90px;
+          margin-left: 65px;
+        }
+      }
+
+      .menu--withButton {
+        display: none;
+      }
+
+      .menu {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          text-align: right;
+          list-style: none;
+          padding-right: 60px;
+          width: 100%;
+          padding-left: 0;
+
+          a {
+            text-decoration: none;
+            &:last-child {
+              padding: 0 20px;
+            }
+
+            li {
+              color: $black;
+              cursor: pointer;
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

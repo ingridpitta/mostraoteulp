@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { Home, RegisterForm, Gallery, Portfolio, Project } from "./pages";
+import { Home, RegisterForm, Gallery, Portfolio, Project, About } from "./pages";
 import Template from "./components/template";
 import { Switch, Route } from "react-router-dom";
 import "./app.styles.scss";
@@ -137,7 +137,12 @@ class App extends Component {
     return (
       <Switch>
         <Template>
-          <Route exact path="/" render={(props) => <Home {...props} />} />
+          {/* <Route exact path="/" render={(props) => <div>teste</div>} /> */}
+          <Route
+            exact
+            path="/about"
+            render={(props) => <About {...props} />}
+          />
           <Route
             exact
             path="/register"

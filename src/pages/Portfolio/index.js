@@ -30,9 +30,11 @@ const Portfolio = ({ artists, ...props }) => {
             </div>
             <div className="about">
               <h1>{name}</h1>
-              <div>
-                <img src={photo} alt={`${name} foto`} />
-              </div>
+              <div
+                  dangerouslySetInnerHTML={{
+                    __html: photo,
+                  }}
+                ></div>
 
               <p>
                 <span>{name}, </span>
@@ -52,10 +54,17 @@ const Portfolio = ({ artists, ...props }) => {
                         }}
                       >
                         <div className="project--image">
-                          <img
+                          {project.links[0] !== "-" && (
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: project.links[0],
+                              }}
+                            ></div>
+                          )}
+                          {/* <img
                             src={project.links[0] !== "-" && project.links[0]}
                             alt={`${project.title} capa`}
-                          />
+                          /> */}
                         </div>
                         <div>
                           <h3>{project.title}</h3>

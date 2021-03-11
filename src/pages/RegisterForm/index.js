@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import { RegisterFormContent } from "../../components/organisms";
-import { FinalMessage } from "../../components/molecules";
 import "./registerForm.styles.scss";
 
 class Home extends Component {
@@ -10,6 +9,17 @@ class Home extends Component {
 
     this.state = {
       showMessage: false,
+
+      initialState: {
+        name: "",
+        email: "",
+        organization: "",
+        works: "",
+        social: "",
+        gender: "",
+        race: "",
+        comments: "",
+      },
     };
   }
 
@@ -51,6 +61,17 @@ class Home extends Component {
       Comentário: comments,
     };
 
+    const newState ={
+      name: "",
+      email: "",
+      organization: "",
+      works: "",
+      social: "",
+      gender: "",
+      race: "",
+      comments: "",
+    }
+
     try {
       await doc.useServiceAccountAuth({
         client_email: CLIENT_EMAIL,
@@ -60,23 +81,21 @@ class Home extends Component {
 
       const sheet = doc.sheetsById[SHEET_ID];
       await sheet.addRow(formatedData);
-
-      this.showMessage();
+      
+      this.setState({initialState: newState});
+      // this.showMessage();
     } catch (e) {
       console.error("Error: ", e);
     }
   };
 
   render() {
-    const { showMessage } = this.state;
     return (
       <main className="registerForm--container">
-        {showMessage && (
-          <div className="modal--background">
-            <FinalMessage closeMessage={this.closeMessage} />
-          </div>
-        )}
-        <RegisterFormContent subscribe={this.saveData} />
+        <RegisterFormContent
+          subscribe={this.saveData}
+          initialState={this.state.initialState}
+        />
       </main>
     );
   }

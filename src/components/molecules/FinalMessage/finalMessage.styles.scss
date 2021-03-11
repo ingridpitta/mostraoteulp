@@ -3,7 +3,7 @@
 .finalMessage--container{
     font-family: $font-family--default;
     background-color: $white;
-    max-width: 380px;
+    max-width: 100vw;
     width: 100%;
     margin: 0 auto;
     padding: 50px;
@@ -20,7 +20,7 @@
 
         h1{
             font-size: $font-size--title;
-            color: $color-purple;
+            color: $orange;
             font-weight: bold;
         }
     }
@@ -40,106 +40,9 @@
 
         button{
             @extend %btn--modal--full;
+            color: $orange;
+            border: 1px solid $orange;
+            background-color: $white;
         }
-    }
-}
-
-
-@media(min-width: $mobile-small){
-    .finalMessage--container{
-        max-width: 320px;
-        width: 82%;
-        left: 0;
-        height: 600px;
-        overflow: scroll;
-    }
-}
-
-@media(min-width: 360px){
-    .finalMessage--container{
-        max-width: 320px;
-        width: 82%;
-        left: 0.5%;
-        height: 600px;
-        overflow: scroll;
-    }
-}
-
-@media(min-width: 375px){
-    .finalMessage--container{
-        max-width: 320px;
-        width: 82%;
-        left: 1%;
-        height: 600px;
-        overflow: scroll;
-    }
-}
-
-@media(min-width: 411px){
-    .finalMessage--container{
-        max-width: 320px;
-        width: 82%;
-        left: 4%;
-        height: 600px;
-        overflow: scroll;
-    }
-}
-
-@media(min-width: $mobile){
-    .finalMessage--container{
-        max-width: 420px;
-        width: 82%;
-        left: 2%;
-        height: 700px;
-        overflow: scroll;
-    }
-}
-
-@media(min-width: $tablet-ver){
-    .finalMessage--container{
-        max-width: 380px;
-        width: 100%;
-        left: 21%;
-        height: auto;
-        overflow: hidden;
-    }
-}
-
-@media(min-width: $tablet-hor){
-    .finalMessage--container{
-        max-width: 380px;
-        width: 100%;
-        left: 30%;
-    }
-}
-
-@media(min-width: $desktop-small){
-    .form--container{
-        left: 35%;
-    }
-}
-
-
-@media(min-width: $desktop){
-    .finalMessage--container{
-        left: 33%;
-    }
-}
-
-@media(min-width: 1680px){
-    .finalMessage--container{
-        left: 35%;
-    }
-}
-
-@media(min-width: 1920px){
-    .finalMessage--container{
-        left: 37.8%;
-    }
-}
-
-@media(min-width: $desktop-large){
-    .finalMessage--container{
-        left: 40.5%;
     }
 }

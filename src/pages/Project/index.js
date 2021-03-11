@@ -46,15 +46,18 @@ const Project = ({ ...props }) => {
             <div className="project--images">
               {links.map((link, pos) => {
                 return (
-                  <div key={`${index}_${pos}`}>
-                    <img src={link} alt={`${title} trabalho 01`} />
-                  </div>
+                  <div
+                    key={`${index}_${pos}`}
+                    dangerouslySetInnerHTML={{
+                      __html: link,
+                    }}
+                  ></div>
                 );
               })}
             </div>
             <div className="project--description">
-              <h2>Descrição</h2>
-              {description}
+              {description !== "-" && <><h2>Descrição</h2>
+              {description}</>}
             </div>
             <div className="project--datasheet">
               <h2>Ficha Técnica</h2>
