@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../../assets/images/logo.svg";
+import { ReactComponent as LogoWhite } from "../../../assets/images/logo_white.svg";
 import { ReactComponent as Menu } from "../../../assets/images/menu.svg";
 import "./navbar.styles.scss";
 import { Link } from "react-router-dom";
@@ -15,9 +16,9 @@ const Navbar = () => {
           </div>
           {active && (
             <ul>
-              {/* <Link to="/" onClick={() => setActive(!active)}>
+              <Link to="/" onClick={() => setActive(!active)}>
                 <li>Início</li>
-              </Link>*/}
+              </Link>
               <Link to="/about" onClick={() => setActive(!active)}>
                 <li>Sobre</li>
               </Link> 
@@ -31,13 +32,15 @@ const Navbar = () => {
           )}
         </div>
         <div className="logo">
-          <Logo />
+        {console.log(window.innerWidth)}
+          {window.innerWidth > 1024  ? <Link to="/"><Logo /></Link> :
+          <Link to="/"><LogoWhite /></Link>}
         </div>
         <div className="menu">
           <ul>
-            {/* <Link to="/" onClick={() => setActive(!active)}>
+            <Link to="/" onClick={() => setActive(!active)}>
               <li>Início</li>
-            </Link>*/}
+            </Link>
             <Link to="/about" onClick={() => setActive(!active)}>
               <li>Sobre</li>
             </Link>

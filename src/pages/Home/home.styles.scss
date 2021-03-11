@@ -1,9 +1,70 @@
 @import "../../styles/_index";
 
 .home--container {
+  max-width: 100vw;
+  width: 100%;
+  margin: -30px auto -30px auto;
   height: auto;
-  .modal--background {
-    @extend %background;
-    height: 104vh;
+  background-color: $black;
+  section {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      margin: 45% auto;
+    }
+  }
+}
+
+@media(min-width: 768px){
+  .home--container {
+    max-width: 100vw;
+    width: 100%;
+    margin: -30px auto -30px auto;
+    height: auto;
+    background-color: $black;
+    section {
+      width: 80%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        margin: 45% auto;
+      }
+    }
+  }
+}
+
+@media(min-width: 1024px){
+  .home--container {
+    max-width: 100vw;
+    width: 100%;
+    margin: -30px auto -30px auto;
+    height: auto;
+    background-color: $black;
+    section {
+      width: 80%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        margin: 45% auto;
+      }
+    }
+  }
+}
+@media(min-width: 1280px){
+  .home--container {
+    max-width: 100vw;
+    width: 100%;
+    margin: -30px auto -30px auto;
+    height: auto;
+    background-color: $black;
+    section {
+      width: 80%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        margin: 45% auto;
+      }
+    }
   }
 }

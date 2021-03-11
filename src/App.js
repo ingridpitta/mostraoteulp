@@ -137,7 +137,7 @@ class App extends Component {
     return (
       <Switch>
         <Template>
-          {/* <Route exact path="/" render={(props) => <div>teste</div>} /> */}
+          <Route exact path="/" render={(props) => <Home {...props}/>} />
           <Route
             exact
             path="/about"

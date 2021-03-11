@@ -14,10 +14,12 @@ nav {
     margin: 0 auto;
 
     .logo {
-      svg {
-        width: 90px;
-        height: 90px;
-        margin-left: 60px;
+      a{
+        svg {
+          width: 90px;
+          height: 90px;
+          margin-left: 60px;
+        }
       }
     }
 
@@ -89,10 +91,12 @@ nav {
       margin: 0 auto;
 
       .logo {
-        svg {
-          width: 90px;
-          height: 90px;
+        a{
           margin-left: 160px;
+          svg {
+            width: 90px;
+            height: 90px;
+          }
         }
       }
 
@@ -165,10 +169,13 @@ nav {
       margin: 0 auto;
 
       .logo {
-        svg {
-          width: 90px;
-          height: 90px;
-          margin-left: 340px;
+        a{
+          margin-left: 160px;
+          svg {
+            width: 90px;
+            height: 90px;
+            margin-left: 160px;
+          }
         }
       }
 
@@ -241,11 +248,13 @@ nav {
       margin: 0 auto;
 
       .logo {
-        width: 30%;
-        svg {
-          width: 90px;
-          height: 90px;
-          margin-left: 65px;
+        a{
+          margin-left: 0;
+          svg {
+            width: 90px;
+            height: 90px;
+            margin-left: 50px;
+          }
         }
       }
 
@@ -270,14 +279,20 @@ nav {
 
           a {
             text-decoration: none;
-            &:last-child {
-              padding: 0 20px;
-            }
 
             li {
               color: $black;
               cursor: pointer;
-              padding: 10px 0;
+              padding: 10px 20px;
+            }
+
+            li:last-child{
+              padding-right: 0;
+            }
+
+            li:hover, li:focus{
+              text-decoration: 2px solid $orange underline;
+              text-underline-offset: 5px;
             }
           }
         }

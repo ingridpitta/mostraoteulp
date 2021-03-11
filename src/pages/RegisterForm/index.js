@@ -91,7 +91,7 @@ class Home extends Component {
 
   render() {
     return (
-      <main className="registerForm--container">
+      <main className="register--container">
         <RegisterFormContent
           subscribe={this.saveData}
           initialState={this.state.initialState}

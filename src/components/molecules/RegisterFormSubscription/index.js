@@ -15,7 +15,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
     <div className="form--container">
       <div className="formTitle--container">
         <Title title="Cadastro" />
-        <p>Quer ser parte do ecossistema?  Pois cuida, se cadastra e Mostra o Teu!</p>
+        <p style={{width: "100%"}}>Quer ser parte do ecossistema?  Pois cuida, se cadastra e Mostra o Teu!</p>
       </div>
       <Formik
         initialValues={initialState}
