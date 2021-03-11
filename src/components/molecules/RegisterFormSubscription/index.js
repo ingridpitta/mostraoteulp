@@ -91,7 +91,9 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
                   touched={touched.works}
                 />
               </div>
-              <div className="input--container">
+            </div>
+            <div className="form--left">
+            <div className="input--container">
                 <label htmlFor="social">Redes Sociais</label>
                 <Input
                   placeholder="Insira sua rede social"
@@ -105,8 +107,6 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
                   touched={touched.social}
                 />
               </div>
-            </div>
-            <div className="form--left">
               <div className="input--container">
                 <label htmlFor="gender">Gênero</label>
                 <Input

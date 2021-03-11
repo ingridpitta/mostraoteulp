@@ -33,7 +33,10 @@ const Project = ({ ...props }) => {
         return (
           <div className="project--content" key={index}>
             <div className="project--nav">
-              <div className="backBtn" onClick={() => history.push(`/portfolio/${currentArtistId}`)}>
+              <div
+                className="backBtn"
+                onClick={() => history.push(`/portfolio/${currentArtistId}`)}
+              >
                 <Back />
                 Voltar
               </div>
@@ -43,25 +46,33 @@ const Project = ({ ...props }) => {
 
             <h1>{title}</h1>
 
-            <div className="project--images">
-              {links.map((link, pos) => {
-                return (
-                  <div
-                    key={`${index}_${pos}`}
-                    dangerouslySetInnerHTML={{
-                      __html: link,
-                    }}
-                  ></div>
-                );
-              })}
-            </div>
-            <div className="project--description">
-              {description !== "-" && <><h2>Descrição</h2>
-              {description}</>}
-            </div>
-            <div className="project--datasheet">
-              <h2>Ficha Técnica</h2>
-              <div dangerouslySetInnerHTML={{ __html:datasheet}}/>
+            <div className="project--grid">
+              <div className="project--images">
+                {links.map((link, pos) => {
+                  return (
+                    <div
+                      key={`${index}_${pos}`}
+                      dangerouslySetInnerHTML={{
+                        __html: link,
+                      }}
+                    ></div>
+                  );
+                })}
+              </div>
+              <div className="project--infos">
+                <div className="project--description">
+                  {description !== "-" && (
+                    <>
+                      <h2>Descrição</h2>
+                      {description}
+                    </>
+                  )}
+                </div>
+                <div className="project--datasheet">
+                  <h2>Ficha Técnica</h2>
+                  <div dangerouslySetInnerHTML={{ __html: datasheet }} />
+                </div>
+              </div>
             </div>
           </div>
         );

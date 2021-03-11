@@ -30,16 +30,20 @@ const Portfolio = ({ artists, ...props }) => {
             </div>
             <div className="about">
               <h1>{name}</h1>
-              <div
+              <div className="about--description">
+                <div
                   dangerouslySetInnerHTML={{
                     __html: photo,
                   }}
                 ></div>
 
-              <p>
-                <span>{name}, </span>
-                {bio}
-              </p>
+                {bio !== "-" && (
+                  <p>
+                    <span>{name}, </span>
+                    {bio}
+                  </p>
+                )}
+              </div>
             </div>
             <div className="projects">
               {projects.map((project) => {
@@ -61,10 +65,6 @@ const Portfolio = ({ artists, ...props }) => {
                               }}
                             ></div>
                           )}
-                          {/* <img
-                            src={project.links[0] !== "-" && project.links[0]}
-                            alt={`${project.title} capa`}
-                          /> */}
                         </div>
                         <div>
                           <h3>{project.title}</h3>
