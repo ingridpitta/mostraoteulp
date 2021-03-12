@@ -23,11 +23,12 @@
       color: $black;
       text-decoration: 2px solid $orange underline;
       text-underline-offset: 5px;
-      margin-bottom: 0;
+      margin-bottom: 10px;
     }
 
     p {
       width: 80%;
+      font-size: $font-size--text;
     }
   }
 
@@ -40,10 +41,11 @@
       .input--container {
         width: 100%;
         label {
-          color: $color-gray;
+          color: $black;
           text-decoration: 2px solid $orange underline;
           text-underline-offset: 5px;
           margin-bottom: 0;
+          line-height: 1.8;
         }
 
         .ant-row,
@@ -61,9 +63,10 @@
                   width: 100%;
                   border: none;
                   border-bottom: 0.5px solid $color-gray;
-                  color: $color-gray;
-                  padding: 10px 0 5px 0;
+                  color: $black;
+                  padding: 15px 0 5px 0;
                   outline: none;
+                  line-height: 1.8;
                 }
               }
             }
@@ -105,10 +108,11 @@
       .input--container {
         width: 100%;
         label {
-          color: $color-gray;
+          color: $black;
           text-decoration: 2px solid $orange underline;
           text-underline-offset: 5px;
           margin-bottom: 0;
+          line-height: 1.8;
         }
 
         .ant-row,
@@ -126,9 +130,10 @@
                   width: 100%;
                   border: none;
                   border-bottom: 0.5px solid $color-gray;
-                  color: $color-gray;
-                  padding: 10px 0 5px 0;
+                  color: $black;
+                  padding: 15px 0 5px 0;
                   outline: none;
+                  line-height: 1.8;
                 }
               }
             }
@@ -174,6 +179,7 @@
           background-color: $white;
           color: $orange;
           border: 1px solid $orange;
+          padding: 10px 15px;
         }
       }
     }
@@ -205,11 +211,12 @@
         color: $black;
         text-decoration: 2px solid $orange underline;
         text-underline-offset: 5px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
 
       p {
         width: 80%;
+        font-size: $font-size--text;
       }
     }
 
@@ -222,7 +229,7 @@
         .input--container {
           width: 100%;
           label {
-            color: $color-gray;
+            color: $black;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 5px;
             margin-bottom: 0;
@@ -243,9 +250,10 @@
                     width: 100%;
                     border: none;
                     border-bottom: 0.5px solid $color-gray;
-                    color: $color-gray;
-                    padding: 10px 0 5px 0;
+                    color: $black;
+                    padding: 15px 0 5px 0;
                     outline: none;
+                    line-height: 1.8;
                   }
                 }
               }
@@ -287,7 +295,7 @@
         .input--container {
           width: 100%;
           label {
-            color: $color-gray;
+            color: $black;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 5px;
             margin-bottom: 0;
@@ -308,9 +316,10 @@
                     width: 100%;
                     border: none;
                     border-bottom: 0.5px solid $color-gray;
-                    color: $color-gray;
-                    padding: 10px 0 5px 0;
+                    color: $black;
+                    padding: 15px 0 5px 0;
                     outline: none;
+                    line-height: 1.8;
                   }
                 }
               }
@@ -355,6 +364,8 @@
             background-color: $white;
             color: $orange;
             border: 1px solid $orange;
+            font-size: $font-size--medium;
+            padding: 10px 15px;
           }
         }
       }
@@ -387,11 +398,13 @@
         color: $black;
         text-decoration: 2px solid $orange underline;
         text-underline-offset: 5px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
 
       p {
         width: 80%;
+        font-size: $font-size--subtitle;
+        margin-bottom: 30px;
       }
     }
 
@@ -404,7 +417,7 @@
         .input--container {
           width: 100%;
           label {
-            color: $color-gray;
+            color: $black;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 5px;
             margin-bottom: 0;
@@ -425,9 +438,10 @@
                     width: 100%;
                     border: none;
                     border-bottom: 0.5px solid $color-gray;
-                    color: $color-gray;
-                    padding: 10px 0 5px 0;
+                    color: $black;
+                    padding: 15px 0 5px 0;
                     outline: none;
+                    line-height: 1.8;
                   }
                 }
               }
@@ -469,7 +483,7 @@
         .input--container {
           width: 100%;
           label {
-            color: $color-gray;
+            color: $black;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 5px;
             margin-bottom: 0;
@@ -490,9 +504,10 @@
                     width: 100%;
                     border: none;
                     border-bottom: 0.5px solid $color-gray;
-                    color: $color-gray;
-                    padding: 10px 0 5px 0;
+                    color: $black;
+                    padding: 15px 0 5px 0;
                     outline: none;
+                    line-height: 1.8;
                   }
                 }
               }
@@ -537,6 +552,7 @@
             background-color: $white;
             color: $orange;
             border: 1px solid $orange;
+            padding: 10px 20px;
           }
         }
       }
@@ -570,10 +586,11 @@
         color: $black;
         text-decoration: 2px solid $orange underline;
         text-underline-offset: 5px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
       }
 
       p {
+        font-size: $font-size--subtitle;
         width: 80%;
       }
     }
@@ -588,10 +605,12 @@
         .input--container {
           width: 100%;
           label {
-            color: $color-gray;
+            color: $black;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 5px;
             margin-bottom: 0;
+            font-size: $font-size--text;
+            line-height: 1.8;
           }
 
           .ant-row,
@@ -609,9 +628,11 @@
                     width: 100%;
                     border: none;
                     border-bottom: 0.5px solid $color-gray;
-                    color: $color-gray;
-                    padding: 10px 0 5px 0;
+                    color: $black;
+                    padding: 15px 0 5px 0;
                     outline: none;
+                    font-size: $font-size--text;
+                    line-height: 1.8;
                   }
                 }
               }
@@ -653,10 +674,12 @@
         .input--container {
           width: 100%;
           label {
-            color: $color-gray;
+            color: $black;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 5px;
             margin-bottom: 0;
+            font-size: $font-size--text;
+            line-height: 1.8;
           }
 
           .ant-row,
@@ -674,9 +697,11 @@
                     width: 100%;
                     border: none;
                     border-bottom: 0.5px solid $color-gray;
-                    color: $color-gray;
-                    padding: 10px 0 5px 0;
+                    color: $black;
+                    padding: 15px 0 5px 0;
                     outline: none;
+                    font-size: $font-size--text;
+                    line-height: 1.8;
                   }
                 }
               }
@@ -720,6 +745,7 @@
             background-color: $white;
             color: $orange;
             border: 1px solid $orange;
+            padding: 10px 20px;
           }
         }
       }

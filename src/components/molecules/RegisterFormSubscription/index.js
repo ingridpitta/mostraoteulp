@@ -78,9 +78,9 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
                 />
               </div>
               <div className="input--container">
-                <label htmlFor="works">Trabalhos</label>
+                <label htmlFor="works">Coloca aqui um trabalho teu:</label>
                 <Input
-                  placeholder="Insira seus trabalhos"
+                  placeholder="Insira um link"
                   handleChange={handleChange}
                   {...props}
                   name="works"
@@ -94,9 +94,9 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
             </div>
             <div className="form--left">
             <div className="input--container">
-                <label htmlFor="social">Redes Sociais</label>
+                <label htmlFor="social">Principal rede social</label>
                 <Input
-                  placeholder="Insira sua rede social"
+                  placeholder="Link da sua principal rede social"
                   handleChange={handleChange}
                   {...props}
                   name="social"
@@ -108,9 +108,9 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
                 />
               </div>
               <div className="input--container">
-                <label htmlFor="gender">Gênero</label>
+                <label htmlFor="gender">Identidade de gênero:</label>
                 <Input
-                  placeholder="Insira seu gênero"
+                  placeholder="Sua identidade de gênero"
                   handleChange={handleChange}
                   {...props}
                   name="gender"
@@ -122,9 +122,9 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
                 />
               </div>
               <div className="input--container">
-                <label htmlFor="race">Raça</label>
+                <label htmlFor="race">Como você se autodeclara?</label>
                 <Input
-                  placeholder="Insira sua raça"
+                  placeholder="Como você se autodeclara"
                   handleChange={handleChange}
                   {...props}
                   name="race"
@@ -136,9 +136,9 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
                 />
               </div>
               <div className="input--container">
-                <label htmlFor="comments">Comentário</label>
+                <label htmlFor="comments">Fala do teu trabalho e da tua motivação pra ser parte do ecossistema:</label>
                 <Input
-                  placeholder="Insira um comentário"
+                  placeholder="Fala aí..."
                   handleChange={handleChange}
                   {...props}
                   name="comments"
