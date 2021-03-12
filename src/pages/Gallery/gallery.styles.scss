@@ -24,19 +24,18 @@
       color: $black;
 
       .gallery--artist {
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-        }
-
         div {
           background-color: black;
           width: 60%;
           height: 160px;
           margin: 0 auto;
+          
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
         }
 
         h4 {
@@ -55,12 +54,12 @@
     max-width: 100vw;
     width: 100%;
     text-align: center;
-  
+
     svg {
       width: 100%;
       height: 70px;
     }
-  
+
     .gallery--content {
       justify-content: center;
       display: grid;
@@ -71,22 +70,22 @@
       a {
         text-decoration: none;
         cursor: pointer;
-  
+
         .gallery--artist {
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-          }
-  
           div {
             background-color: black;
             width: 100%;
-            height: 160px;
+            height: 220px;
             margin: 0 auto;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
           }
-  
+
           h4 {
             width: 60%;
             margin: 10px auto;
@@ -104,12 +103,12 @@
     max-width: 100vw;
     width: 100%;
     text-align: center;
-  
+
     svg {
       width: 100%;
       height: 70px;
     }
-  
+
     .gallery--content {
       justify-content: center;
       display: grid;
@@ -120,22 +119,21 @@
       a {
         text-decoration: none;
         cursor: pointer;
-  
+
         .gallery--artist {
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-          }
-  
           div {
             background-color: black;
             width: 90%;
-            height: 160px;
+            height: 200px;
             margin: 0 auto;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
           }
-  
+
           h4 {
             width: 60%;
             margin: 10px auto;
@@ -155,12 +153,12 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 60px;
-  
+
     svg {
       width: 100%;
       height: 100px;
     }
-  
+
     .gallery--content {
       justify-content: center;
       display: grid;
@@ -172,22 +170,21 @@
       a {
         text-decoration: none;
         cursor: pointer;
-  
+
         .gallery--artist {
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-          }
-  
           div {
             background-color: black;
             width: 90%;
-            height: 160px;
+            height: 200px;
             margin: 0 auto;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
           }
-  
+
           h4 {
             width: 60%;
             margin: 10px auto;

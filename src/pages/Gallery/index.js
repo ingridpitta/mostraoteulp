@@ -6,7 +6,7 @@ import "./gallery.styles.scss";
 const Gallery = ({ artists }) => {
   return (
     <section className="gallery--container">
-      <Title alt="mostra o teu! ecossistema criativo"/>
+      <Title alt="mostra o teu! ecossistema criativo" />
       <div className="gallery--content">
         {artists.map((artist, index) => {
           const { id, bio, ed_mostra, name, photo, projects } = artist;
@@ -14,11 +14,9 @@ const Gallery = ({ artists }) => {
           return (
             <Link to={`/portfolio/${id}`}>
               <div key={index} className="gallery--artist">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: photo,
-                  }}
-                ></div>
+                <div>
+                  <img src={`/images/gallery/${photo}`} alt={name} />
+                </div>
               </div>
               <h4>{name}</h4>
             </Link>

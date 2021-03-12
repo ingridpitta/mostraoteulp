@@ -31,11 +31,9 @@ const Portfolio = ({ artists, ...props }) => {
             <div className="about">
               <h1>{name}</h1>
               <div className="about--description">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: photo,
-                  }}
-                ></div>
+                <div>
+                  <img src={`/images/gallery/${photo}`} alt={name} />
+                </div>
 
                 {bio !== "-" && (
                   <p>

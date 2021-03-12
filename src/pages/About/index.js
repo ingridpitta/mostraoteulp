@@ -33,8 +33,10 @@ class About extends Component {
         const teamModel = {
           id: index,
           name: Nome,
-          photo: Foto,
+          photo: Foto
         };
+
+        console.log({ teamModel });
 
         return teamModel;
       });
@@ -166,12 +168,10 @@ class About extends Component {
                 {team.map((person) => {
                   const { index, name, photo } = person;
                   return (
-                    <div>
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: photo,
-                        }}
-                      ></div>
+                    <div key={`${index}--${name}`}>
+                      <div>
+                        <img src={`/images/we/${photo}`} alt={name} />
+                      </div>
                       <h3> {name} </h3>
                     </div>
                   );

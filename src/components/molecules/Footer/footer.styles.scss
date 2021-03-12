@@ -9,7 +9,7 @@ footer {
     height: 50px;
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 60%;
     margin: 0 auto;
     align-items: center;
 
@@ -38,4 +38,131 @@ footer {
       }
     }
   }
+}
+
+@media (min-width: 768px) {
+  footer {
+    background-color: $orange;
+    text-align: center;
+    margin-top: 30px;
+
+    div {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      margin: 0 auto;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a {
+        .instagram {
+        }
+      }
+
+      a {
+        .fb {
+        }
+      }
+
+      a {
+        .twitter {
+        }
+      }
+
+      a {
+        .email {
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    background-color: $orange;
+    text-align: center;
+    margin-top: 30px;
+  
+    div {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      margin: 0 auto;
+      align-items: center;
+  
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+  
+      a {
+        .instagram {
+        }
+      }
+  
+      a {
+        .fb {
+        }
+      }
+  
+      a {
+        .twitter {
+        }
+      }
+  
+      a {
+        .email {
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  footer {
+    background-color: $orange;
+    text-align: center;
+    margin-top: 30px;
+  
+    div {
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      margin: 0 auto;
+      align-items: center;
+  
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+  
+      a {
+        .instagram {
+        }
+      }
+  
+      a {
+        .fb {
+        }
+      }
+  
+      a {
+        .twitter {
+        }
+      }
+  
+      a {
+        .email {
+        }
+      }
+    }
+  }
+  
 }
