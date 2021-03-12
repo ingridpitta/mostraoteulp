@@ -9,14 +9,56 @@
   section {
     width: 80%;
     margin: 0 auto;
+
+    h1{
+      color: $lime;
+      margin: 30px auto 0 auto;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: $font-size--title;
+    }
+    
+    .ant-carousel {
+      div {
+        div {
+          height: auto;
+        }
+
+        .carousel--dots {
+          height: 50px;
+          li {
+            button {
+              background-color: $lime;
+              border-radius: 50%;
+              height: 10px;
+              width: 10px;
+              margin: 0 5px;
+            }
+            cursor: pointer;
+          }
+
+          .slick-active {
+            button {
+              background-color: $lime;
+              border-radius: 50%;
+              height: 10px;
+              width: 10px;
+              margin: 0 5px;
+            }
+            cursor: pointer;
+          }
+        }
+      }
+    }
     img {
       width: 100%;
-      margin: 45% auto;
+      margin: 25% auto 50% auto;
     }
   }
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   .home--container {
     max-width: 100vw;
     width: 100%;
@@ -26,15 +68,60 @@
     section {
       width: 80%;
       margin: 0 auto;
+  
+      h1{
+        color: $lime;
+        margin: 30px auto 0 auto;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: $font-size--title;
+      }
+      
+      .ant-carousel {
+        div {
+          div {
+            height: auto;
+          }
+  
+          .carousel--dots {
+            height: 50px;
+            width: 100%;
+            margin: 150px auto;
+
+            li {
+              button {
+                background-color: $lime;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin: 0 10px;
+              }
+              cursor: pointer;
+            }
+  
+            .slick-active {
+              button {
+                background-color: $lime;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin: 0 10px;
+              }
+              cursor: pointer;
+            }
+          }
+        }
+      }
       img {
         width: 100%;
-        margin: 45% auto;
+        margin: 25% auto 50% auto;
       }
     }
   }
 }
 
-@media(min-width: 1024px){
+@media (min-width: 1024px) {
   .home--container {
     max-width: 100vw;
     width: 100%;
@@ -44,14 +131,59 @@
     section {
       width: 80%;
       margin: 0 auto;
+  
+      h1{
+        color: $lime;
+        margin: 30px auto 0 auto;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: $font-size--title;
+      }
+      
+      .ant-carousel {
+        div {
+          div {
+            height: auto;
+          }
+  
+          .carousel--dots {
+            height: 50px;
+            width: 100%;
+            margin: 200px auto;
+            
+            li {
+              button {
+                background-color: $lime;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin: 0 10px;
+              }
+              cursor: pointer;
+            }
+  
+            .slick-active {
+              button {
+                background-color: $lime;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin: 0 10px;
+              }
+              cursor: pointer;
+            }
+          }
+        }
+      }
       img {
         width: 100%;
-        margin: 45% auto;
+        margin: 25% auto 50% auto;
       }
     }
   }
 }
-@media(min-width: 1280px){
+@media (min-width: 1280px) {
   .home--container {
     max-width: 100vw;
     width: 100%;
@@ -61,9 +193,54 @@
     section {
       width: 80%;
       margin: 0 auto;
+  
+      h1{
+        color: $lime;
+        margin: 30px auto 0 auto;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        font-size: $font-size--title;
+      }
+      
+      .ant-carousel {
+        div {
+          div {
+            height: auto;
+          }
+  
+          .carousel--dots {
+            height: 50px;
+            width: 100%;
+            margin: 350px auto;
+            
+            li {
+              button {
+                background-color: $lime;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin: 0 10px;
+              }
+              cursor: pointer;
+            }
+  
+            .slick-active {
+              button {
+                background-color: $lime;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                margin: 0 10px;
+              }
+              cursor: pointer;
+            }
+          }
+        }
+      }
       img {
         width: 100%;
-        margin: 45% auto;
+        margin: 25% auto 50% auto;
       }
     }
   }

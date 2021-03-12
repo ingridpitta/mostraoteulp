@@ -6,7 +6,7 @@ import "./gallery.styles.scss";
 const Gallery = ({ artists }) => {
   return (
     <section className="gallery--container">
-      <Title />
+      <Title alt="mostra o teu! ecossistema criativo"/>
       <div className="gallery--content">
         {artists.map((artist, index) => {
           const { id, bio, ed_mostra, name, photo, projects } = artist;

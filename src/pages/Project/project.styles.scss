@@ -353,6 +353,7 @@
             width: 80%;
             margin: 50px auto;
             text-align: justify;
+            font-size: $font-size--subtitle;
             h2 {
               color: $black;
               text-decoration: 2px solid $orange underline;
@@ -365,7 +366,7 @@
             width: 80%;
             margin: 50px auto;
             text-align: left;
-
+            font-size: $font-size--subtitle;
             h2 {
               color: $black;
               text-decoration: 2px solid $orange underline;
@@ -412,7 +413,7 @@
       width: 100%;
       .project--nav {
         max-width: 100vw;
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -453,7 +454,7 @@
       .project--grid {
         display: flex;
         flex-direction: row-reverse;
-        width: 80%;
+        width: 90%;
         margin: auto;
 
         .project--images {
@@ -492,6 +493,7 @@
             width: 100%;
             margin: 50px auto;
             text-align: justify;
+            font-size: $font-size--subtitle;
             h2 {
               color: $black;
               text-decoration: 2px solid $orange underline;
@@ -504,6 +506,7 @@
             width: 100%;
             margin: 50px auto;
             text-align: left;
+            font-size: $font-size--subtitle;
 
             h2 {
               color: $black;

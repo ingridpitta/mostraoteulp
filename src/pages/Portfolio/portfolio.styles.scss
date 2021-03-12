@@ -93,7 +93,7 @@
   .projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 25px;
+    grid-row-gap: 35px;
     grid-column-gap: 25px;
     margin: 60px auto;
     width: 80%;
@@ -130,6 +130,7 @@
       }
 
       div {
+        margin-top: 15px;
         h3 {
           font-weight: bold;
           font-size: $font-size--text;
@@ -274,6 +275,7 @@
         }
 
         div {
+          margin-top: 20px;
           h3 {
             font-weight: bold;
             font-size: $font-size--text;
@@ -424,6 +426,7 @@
         }
 
         div {
+          margin-top: 20px;
           h3 {
             font-weight: bold;
             font-size: $font-size--subtitle;
@@ -580,6 +583,7 @@
         }
 
         div {
+          margin-top: 20px;
           h3 {
             font-weight: bold;
             font-size: $font-size--subtitle;
