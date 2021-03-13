@@ -26,7 +26,7 @@ const Portfolio = ({ artists, ...props }) => {
                 Voltar
               </div>
 
-              <h3>Mostra | 2020</h3>
+              <h3>Ecossistema Criativo | 2020</h3>
             </div>
             <div className="about">
               <h1>{name}</h1>
@@ -35,12 +35,7 @@ const Portfolio = ({ artists, ...props }) => {
                   <img src={`/images/gallery/${photo}`} alt={name} />
                 </div>
 
-                {bio !== "-" && (
-                  <p>
-                    <span>{name}, </span>
-                    {bio}
-                  </p>
-                )}
+                {bio !== "-" && <p>{bio}</p>}
               </div>
             </div>
             <div className="projects">

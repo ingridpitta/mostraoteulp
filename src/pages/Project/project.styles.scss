@@ -6,6 +6,9 @@
   text-align: center;
   justify-content: center;
   height: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: $black;
 
   .project--content {
     width: 100%;
@@ -24,19 +27,23 @@
         align-items: center;
         justify-content: space-between;
         font-size: $font-size--text;
-        color: $text-title--default;
+        color: $white;
         cursor: pointer;
 
         svg {
           width: 10px;
           height: 15px;
           margin-right: 10px;
+
+          path {
+            fill: $lime;
+          }
         }
       }
 
       h3 {
         font-size: $font-size--medium;
-        color: $black;
+        color: $white;
         text-decoration: 2px solid $orange underline;
         text-underline-offset: 5px;
         margin-bottom: 0;
@@ -46,6 +53,7 @@
     h1 {
       width: 80%;
       margin: 60px auto 30px auto;
+      color: $white;
     }
 
     .project--grid {
@@ -86,8 +94,9 @@
           width: 80%;
           margin: 50px auto;
           text-align: justify;
+          color: $white;
           h2 {
-            color: $black;
+            color: $lime;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 12px;
             margin-bottom: 30px;
@@ -98,9 +107,10 @@
           width: 80%;
           margin: 50px auto;
           text-align: left;
+          color: $white;
 
           h2 {
-            color: $black;
+            color: $lime;
             text-decoration: 2px solid $orange underline;
             text-underline-offset: 12px;
             margin-bottom: 30px;
@@ -109,11 +119,11 @@
           h3 {
             font-weight: normal;
             margin: 10px auto;
-            color: $black;
+            color: $white;
             font-size: $font-size--text;
             word-wrap: break-word;
             span {
-              color: $black;
+              color: $lime;
               font-weight: bold;
               font-size: $font-size--text;
               word-wrap: break-word;
@@ -121,7 +131,7 @@
 
             a {
               text-decoration: none;
-              color: $black;
+              color: $white;
               cursor: pointer;
               word-wrap: break-word;
             }
@@ -157,7 +167,7 @@
           align-items: center;
           justify-content: space-between;
           font-size: $font-size--text;
-          color: $text-title--default;
+          color: $white;
           cursor: pointer;
 
           svg {
@@ -169,7 +179,7 @@
 
         h3 {
           font-size: $font-size--medium;
-          color: $black;
+          color: $white;
           text-decoration: 2px solid $orange underline;
           text-underline-offset: 5px;
           margin-bottom: 0;
@@ -179,6 +189,8 @@
       h1 {
         width: 80%;
         margin: 60px auto 30px auto;
+        color: $white;
+        font-size: $font-size--title;
       }
 
       .project--grid {
@@ -219,8 +231,9 @@
             width: 80%;
             margin: 50px auto;
             text-align: justify;
+            color: $white;
             h2 {
-              color: $black;
+              color: $lime;
               text-decoration: 2px solid $orange underline;
               text-underline-offset: 12px;
               margin-bottom: 30px;
@@ -231,9 +244,9 @@
             width: 80%;
             margin: 50px auto;
             text-align: left;
-
+            color: $white;
             h2 {
-              color: $black;
+              color: $lime;
               text-decoration: 2px solid $orange underline;
               text-underline-offset: 12px;
               margin-bottom: 30px;
@@ -242,11 +255,11 @@
             h3 {
               font-weight: normal;
               margin: 10px auto;
-              color: $black;
+              color: $white;
               font-size: $font-size--text;
               word-wrap: break-word;
               span {
-                color: $black;
+                color: $lime;
                 font-weight: bold;
                 font-size: $font-size--text;
                 word-wrap: break-word;
@@ -254,7 +267,7 @@
 
               a {
                 text-decoration: none;
-                color: $black;
+                color: $white;
                 cursor: pointer;
                 word-wrap: break-word;
               }
@@ -291,7 +304,7 @@
           align-items: center;
           justify-content: space-between;
           font-size: $font-size--subtitle;
-          color: $text-title--default;
+          color: $white;
           cursor: pointer;
 
           svg {
@@ -303,7 +316,7 @@
 
         h3 {
           font-size: $font-size--text;
-          color: $black;
+          color: $white;
           text-decoration: 2px solid $orange underline;
           text-underline-offset: 5px;
           margin-bottom: 0;
@@ -313,6 +326,8 @@
       h1 {
         width: 80%;
         margin: 60px auto 30px auto;
+        color: $white;
+        font-size: $font-size--title--big;
       }
 
       .project--grid {
@@ -354,8 +369,9 @@
             margin: 50px auto;
             text-align: justify;
             font-size: $font-size--subtitle;
+            color: $white;
             h2 {
-              color: $black;
+              color: $lime;
               text-decoration: 2px solid $orange underline;
               text-underline-offset: 12px;
               margin-bottom: 30px;
@@ -367,8 +383,10 @@
             margin: 50px auto;
             text-align: left;
             font-size: $font-size--subtitle;
+            color: $white;
+
             h2 {
-              color: $black;
+              color: $lime;
               text-decoration: 2px solid $orange underline;
               text-underline-offset: 12px;
               margin-bottom: 30px;
@@ -377,11 +395,11 @@
             h3 {
               font-weight: normal;
               margin: 10px auto;
-              color: $black;
+              color: $white;
               font-size: $font-size--subtitle;
               word-wrap: break-word;
               span {
-                color: $black;
+                color: $lime;
                 font-weight: bold;
                 font-size: $font-size--subtitle;
                 word-wrap: break-word;
@@ -389,7 +407,7 @@
 
               a {
                 text-decoration: none;
-                color: $black;
+                color: $white;
                 cursor: pointer;
                 word-wrap: break-word;
               }
@@ -426,7 +444,7 @@
           align-items: center;
           justify-content: space-between;
           font-size: $font-size--subtitle;
-          color: $text-title--default;
+          color: $white;
           cursor: pointer;
 
           svg {
@@ -438,7 +456,7 @@
 
         h3 {
           font-size: $font-size--text;
-          color: $black;
+          color: $white;
           text-decoration: 2px solid $orange underline;
           text-underline-offset: 5px;
           margin-bottom: 0;
@@ -448,6 +466,7 @@
       h1 {
         font-size: $font-size--title--big;
         width: 80%;
+        color: $white;
         margin: 60px auto 30px auto;
       }
 
@@ -494,8 +513,10 @@
             margin: 50px auto;
             text-align: justify;
             font-size: $font-size--subtitle;
+            color: $white;
+
             h2 {
-              color: $black;
+              color: $lime;
               text-decoration: 2px solid $orange underline;
               text-underline-offset: 12px;
               margin-bottom: 30px;
@@ -506,10 +527,11 @@
             width: 100%;
             margin: 50px auto;
             text-align: left;
+            color: $white;
             font-size: $font-size--subtitle;
 
             h2 {
-              color: $black;
+              color: $lime;
               text-decoration: 2px solid $orange underline;
               text-underline-offset: 12px;
               margin-bottom: 30px;
@@ -518,11 +540,11 @@
             h3 {
               font-weight: normal;
               margin: 10px auto;
-              color: $black;
+              color: $white;
               font-size: $font-size--subtitle;
               word-wrap: break-word;
               span {
-                color: $black;
+                color: $lime;
                 font-weight: bold;
                 font-size: $font-size--subtitle;
                 word-wrap: break-word;
@@ -530,7 +552,7 @@
 
               a {
                 text-decoration: none;
-                color: $black;
+                color: $white;
                 cursor: pointer;
                 word-wrap: break-word;
               }

@@ -41,7 +41,7 @@ const Project = ({ ...props }) => {
                 Voltar
               </div>
 
-              <h3>Mostra | 2020</h3>
+              <h3>Ecossistema Criativo | 2020</h3>
             </div>
 
             <h1>{title}</h1>

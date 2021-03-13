@@ -15,7 +15,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
     <div className="form--container">
       <div className="formTitle--container">
         <Title title="Cadastro" />
-        <p style={{width: "100%"}}>Quer ser parte do ecossistema?  Pois cuida, se cadastra e Mostra o Teu!</p>
+        <p style={{width: "100%"}}>Quer ser parte do ecossistema criativo? Pois cuida, se cadastra e Mostra o Teu!</p>
       </div>
       <Formik
         initialValues={initialState}
@@ -38,7 +38,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
               <div className="input--container">
                 <label htmlFor="name">Nome</label>
                 <Input
-                  placeholder="Insira seu nome"
+                  placeholder="Ex.: Nome Sobrenome"
                   handleChange={handleChange}
                   {...props}
                   name="name"
@@ -52,7 +52,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
               <div className="input--container">
                 <label htmlFor="email">Email</label>
                 <Input
-                  placeholder="Insira seu email"
+                  placeholder="Ex.: nomesobrenome@email.com"
                   handleChange={handleChange}
                   {...props}
                   name="email"
@@ -66,7 +66,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
               <div className="input--container">
                 <label htmlFor="organization">Coletivo</label>
                 <Input
-                  placeholder="Insira seu coletivo"
+                  placeholder="Ex.: Coletivo Friviow"
                   handleChange={handleChange}
                   {...props}
                   name="organization"
@@ -80,7 +80,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
               <div className="input--container">
                 <label htmlFor="works">Coloca aqui um trabalho teu:</label>
                 <Input
-                  placeholder="Insira um link"
+                  placeholder="Ex.: www.meuportfolio.com.br"
                   handleChange={handleChange}
                   {...props}
                   name="works"
@@ -96,7 +96,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
             <div className="input--container">
                 <label htmlFor="social">Principal rede social</label>
                 <Input
-                  placeholder="Link da sua principal rede social"
+                  placeholder="Ex.: @meuinstagram"
                   handleChange={handleChange}
                   {...props}
                   name="social"
@@ -110,7 +110,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
               <div className="input--container">
                 <label htmlFor="gender">Identidade de gênero:</label>
                 <Input
-                  placeholder="Sua identidade de gênero"
+                  placeholder="Ex.: Feminino"
                   handleChange={handleChange}
                   {...props}
                   name="gender"
@@ -124,7 +124,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
               <div className="input--container">
                 <label htmlFor="race">Como você se autodeclara?</label>
                 <Input
-                  placeholder="Como você se autodeclara"
+                  placeholder="Ex.: Negra "
                   handleChange={handleChange}
                   {...props}
                   name="race"
@@ -136,7 +136,7 @@ const RegisterFormSubscription = ({ confirmSubscribe, initialState }) => {
                 />
               </div>
               <div className="input--container">
-                <label htmlFor="comments">Fala do teu trabalho e da tua motivação pra ser parte do ecossistema:</label>
+                <label htmlFor="comments">Fala do teu trabalho e da tua motivação pra ser parte do ecossistema criativo:</label>
                 <Input
                   placeholder="Fala aí..."
                   handleChange={handleChange}
